@@ -1,7 +1,7 @@
 import logo from '../assets/verum/Verum.png';
 import heroPrimary from '../assets/verum/img.png';
 import heroSecondary from '../assets/verum/img_1.png';
-import doctorBaxtiyor from '../assets/verum/doctor/img.png';
+import doctorKamola from '../assets/verum/doctor/img_1.png';
 import doctorKarimov from '../assets/verum/doctor/Каримов.png';
 import doctorMahina from '../assets/verum/doctor/Mahina.png';
 import doctorNuridin from '../assets/verum/doctor/Нуридин.png';
@@ -36,7 +36,7 @@ const assets = {
   },
   doctors: {
     shahnozaxon: doctorShahnozaxon,
-    baxtiyor: doctorBaxtiyor,
+    kamola: doctorKamola,
     mahina: doctorMahina,
     nuridin: doctorNuridin,
     karimov: doctorKarimov,
@@ -65,15 +65,16 @@ const shared = {
       image: 'primary',
       mapQuery: "Verum Clinic General Uzoqov ko'chasi 43 Toshkent",
       mapUrl: 'https://yandex.uz/maps/?text=Verum%20Clinic%20General%20Uzoqov%2043%20Toshkent',
-      mapEmbed: 'https://yandex.uz/map-widget/v1/?text=Verum%20Clinic%20General%20Uzoqov%2043%20Toshkent&z=15',
+      mapEmbed:
+        'https://yandex.uz/map-widget/v1/?text=Verum%20Clinic%20General%20Uzoqov%2043%20Toshkent&z=15',
     },
     {
       key: 'kids',
       image: 'secondary',
       mapQuery: "Verum Kids Beshqayrag'och ko'chasi 54 Toshkent",
-      mapUrl: "https://yandex.uz/maps/?text=Verum%20Kids%20Beshqayrag%27och%2054%20Toshkent",
+      mapUrl: 'https://yandex.uz/maps/?text=Verum%20Kids%20Beshqayrag%27och%2054%20Toshkent',
       mapEmbed:
-        "https://yandex.uz/map-widget/v1/?text=Verum%20Kids%20Beshqayrag%27och%20ko%27chasi%2054%20Toshkent&z=15",
+        'https://yandex.uz/map-widget/v1/?text=Verum%20Kids%20Beshqayrag%27och%20ko%27chasi%2054%20Toshkent&z=15',
     },
   ],
   stats: [
@@ -83,7 +84,7 @@ const shared = {
     { value: '5+', key: 'experience' },
   ],
   serviceKeys: ['cardio', 'gyn', 'neuro', 'uro', 'uzi', 'lab', 'lor', 'surgery', 'procto'],
-  doctorKeys: ['shahnozaxon', 'baxtiyor', 'mahina', 'nuridin', 'karimov', 'shahlo'],
+  doctorKeys: ['shahlo', 'shahnozaxon', 'mahina', 'kamola', 'nuridin', 'karimov'],
 };
 
 const locales = {
@@ -114,8 +115,8 @@ const locales = {
     ],
     hero: {
       eyebrow: 'Toshkentdagi zamonaviy tibbiyot markazi',
-      title: "VERUM Clinic: aniq tashxis, ehtiyotkor davolash, ishonchli natija",
-      text: "Kardiologiya, ginekologiya, nevrologiya, urologiya, UZI, laboratoriya va jarrohlik xizmatlari bir joyda.",
+      title: 'VERUM Clinic: aniq tashxis, ehtiyotkor davolash, ishonchli natija',
+      text: 'Kardiologiya, ginekologiya, nevrologiya, urologiya, UZI, laboratoriya va jarrohlik xizmatlari bir joyda.',
       primaryAlt: 'VERUM Clinic binosi',
       secondaryAlt: 'VERUM Clinic fasadi',
       note: "Rasmlar xira qilinmagan, klinika ko'rinishi aniq saqlangan.",
@@ -129,22 +130,27 @@ const locales = {
     sections: {
       aboutEyebrow: 'Klinika haqida',
       aboutTitle: 'Bemor uchun qulay, shifokor uchun aniq tizim',
-      aboutText: "Ko'rik, laborator tahlil, instrumental diagnostika va davolash jarayoni tartibli yo'lga qo'yilgan.",
+      aboutText:
+        "Ko'rik, laborator tahlil, instrumental diagnostika va davolash jarayoni tartibli yo'lga qo'yilgan.",
       servicesEyebrow: 'Xizmatlar',
       servicesTitle: "Kerakli tibbiy yo'nalishlar",
-      servicesText: "Har bir bo'limda tekshiruv va davolash bosqichlari bemor uchun tushunarli olib boriladi.",
+      servicesText:
+        "Har bir bo'limda tekshiruv va davolash bosqichlari bemor uchun tushunarli olib boriladi.",
       doctorsEyebrow: 'Mutaxassislar',
       doctorsTitle: 'Shifokorlarimiz',
-      doctorsText: "Doktorlar bitta qatorda carousel ko'rinishida ajralib turadi, suratlar kesilmaydi.",
+      doctorsText:
+        'Tajribali mutaxassislarimiz har bir bemorga individual yondashuv va aniq davolash rejasini taqdim etadi.',
       resultsEyebrow: 'Afzalliklar',
       resultsTitle: "Qabuldan keyin keyingi qadam aniq bo'ladi",
-      resultsText: 'Bemor tekshiruv natijalari va shifokor tavsiyalari bilan tushunarli davolash rejasini oladi.',
+      resultsText:
+        'Bemor tekshiruv natijalari va shifokor tavsiyalari bilan tushunarli davolash rejasini oladi.',
       locationsEyebrow: 'Filiallar',
       locationsTitle: 'Ikki filial, bitta aniq lokatsiya',
       locationsText: "Kerakli filialni tanlang. Pastdagi Yandex karta shu manzilni ko'rsatadi.",
       contactEyebrow: 'Aloqa',
       contactTitle: 'Qabulga yozilish',
-      contactText: "Ma'lumotlaringizni qoldiring. Administrator siz bilan bog'lanib, qulay vaqtni kelishadi.",
+      contactText:
+        "Ma'lumotlaringizni qoldiring. Administrator siz bilan bog'lanib, qulay vaqtni kelishadi.",
     },
     services: {
       cardio: {
@@ -153,7 +159,7 @@ const locales = {
       },
       gyn: {
         title: 'Ginekologiya',
-        desc: "Ayollar salomatligi uchun konsultatsiya, UZI, laborator tahlil va davolash rejasi.",
+        desc: 'Ayollar salomatligi uchun konsultatsiya, UZI, laborator tahlil va davolash rejasi.',
       },
       neuro: {
         title: 'Nevrologiya',
@@ -161,7 +167,7 @@ const locales = {
       },
       uro: {
         title: 'Urologiya',
-        desc: "Urogenital tizim kasalliklari, UZI diagnostika va individual davolash yondashuvi.",
+        desc: 'Urogenital tizim kasalliklari, UZI diagnostika va individual davolash yondashuvi.',
       },
       uzi: {
         title: 'UZI diagnostika',
@@ -173,7 +179,7 @@ const locales = {
       },
       lor: {
         title: 'LOR',
-        desc: "Quloq, burun va tomoq kasalliklari bo‘yicha ko‘rik, tashxis va davolash.",
+        desc: 'Quloq, burun va tomoq kasalliklari bo‘yicha ko‘rik, tashxis va davolash.',
       },
       surgery: {
         title: 'Jarrohlik',
@@ -185,12 +191,59 @@ const locales = {
       },
     },
     doctors: {
-      shahnozaxon: { name: 'Rahimova Shahnozaxon M.', role: 'Nevrolog, PhD, dotsent', info: '8 yil tajriba' },
-      baxtiyor: { name: 'Mirakbarova Kamola A.', role: 'Kardiolog, funksional diagnostika', info: '5 yil tajriba' },
-      mahina: { name: 'Xidirova Mahina S.', role: 'Ginekolog', info: '8 yil tajriba' },
-      nuridin: { name: 'Sarsenbaev Nuridin B.', role: 'Vrach-laborant', info: '11 yil tajriba' },
-      karimov: { name: 'Karimov Murodjon F.', role: 'Urolog, UZI vrach', info: '10 yil tajriba' },
-      shahlo: { name: 'Shahlo Abduvaliyeva', role: 'Terapevt', info: 'Kundalik qabul' },
+      shahlo: {
+        name: 'Talipova Shahlo Rahimdjanovna',
+        role: 'UZI shifokori',
+        info: '8 yil tajriba',
+        details: ['Toshkent davlat tibbiyot akademiyasi'],
+      },
+      shahnozaxon: {
+        name: 'Rahimova Shahnozaxon Muhiddin qizi',
+        role: 'PhD, dotsent. Nevrolog. Preventiv-integrativ vrach. Iglorefleksoterapevt.',
+        info: '8 yil tajriba',
+        details: [
+          'Tug‘ilgan sana: 01.01.1993',
+          'Tug‘ilgan joyi: Toshkent',
+          'Ta’lim: Toshkent Tibbiyot Akademiyasi bakalavriati, 3 yil magistratura, 3 yil doktorantura',
+          'Qabul: Dushanba - Juma, 09:00 - 14:00',
+        ],
+      },
+      mahina: {
+        name: 'Xidirova Mahina Sohibovna',
+        role: 'Ginekolog',
+        info: '8 yil tajriba',
+        details: ['Toshkent davlat pediatriya instituti'],
+      },
+      kamola: {
+        name: 'Mirakbarova Kamola Abdusattorovna',
+        role: 'Kardiolog, funksional diagnostika shifokori',
+        info: '5 yil tajriba',
+        details: [
+          'Yo‘nalish: ExoKG, Xolter monitoring, SMAD, Tredmil',
+          'Tug‘ilgan sana: 10.07.1991',
+          'Tug‘ilgan joyi: Toshkent shahri',
+          'Ta’lim: TTA bakalavriati, RCNPMCK klinik ordinatura, VMOI qayta tayyorlash',
+          'Qabul: Dushanba - Juma, 10:00 - 16:00',
+        ],
+      },
+      nuridin: {
+        name: 'Sarsenbaev Nuridin Berdimuradovich',
+        role: 'Vrach-laborant',
+        info: '11 yil tajriba',
+        details: ['Qabul: Dushanba - Shanba, 10:00 - 17:00'],
+      },
+      karimov: {
+        name: 'Karimov Murodjon Foziljonovich',
+        role: 'Urolog, UZI vrach',
+        info: '10 yil tajriba',
+        details: [
+          'Tug‘ilgan sana: 03.09.1990',
+          'Tug‘ilgan joyi: Xorazm viloyati',
+          'Ta’lim: TTA Urganch filialida 7 yil bakalavr, Toshkent vrachlar malakasini oshirish institutida 2 yil klinik ordinatura',
+          'Qabul: Dushanba, Chorshanba, Juma - 09:00 - 14:00',
+          'Qabul: Seshanba, Payshanba, Shanba - 09:00 - 17:00',
+        ],
+      },
     },
     benefits: [
       'Birlamchi ko‘rik va shikoyatlarni tahlil qilish',
@@ -200,18 +253,21 @@ const locales = {
     ],
     branches: {
       kids: {
-        name: 'VERUM Kids',
+        name: 'Verum klinika (Uchtepa filiali)',
         address: "Beshqayrag'och ko'chasi 54-uy",
-        description: "Bolalar va o'smirlar uchun qulay sharoitdagi filial.",
+        description:
+          'Verum klinikasi bolalar va o‘smirlarga yuqori sifatli tibbiy xizmat ko‘rsatishga ixtisoslashgan zamonaviy tibbiyot muassasasidir. Tajribali mutaxassislar har bir bolaga individual yondashuv asosida yordam ko‘rsatadi.',
       },
       clinic: {
-        name: 'VERUM Clinic',
+        name: 'Verum klinika (Shayxontohur tumani)',
         address: "General Uzoqov ko'chasi 43",
-        description: "Kattalar uchun diagnostika, davolash va konsultatsiya filiali.",
+        description:
+          '2020-yil avgust oyida faoliyatini boshlagan klinika urologiya va ginekologiya yo‘nalishlarida zamonaviy yondashuv, aniq tashxis va samarali davolash tamoyillari asosida xizmat ko‘rsatadi.',
       },
     },
     footer: {
-      description: "VERUM Clinic - diagnostika, davolash va profilaktikani bir joyda jamlagan zamonaviy tibbiyot markazi.",
+      description:
+        'VERUM Clinic - diagnostika, davolash va profilaktikani bir joyda jamlagan zamonaviy tibbiyot markazi.',
       columns: [
         {
           title: 'Klinika',
@@ -289,13 +345,15 @@ const locales = {
     sections: {
       aboutEyebrow: 'О клинике',
       aboutTitle: 'Удобно для пациента, точно для врача',
-      aboutText: 'Осмотр, лабораторные анализы, инструментальная диагностика и лечение выстроены в понятный процесс.',
+      aboutText:
+        'Осмотр, лабораторные анализы, инструментальная диагностика и лечение выстроены в понятный процесс.',
       servicesEyebrow: 'Услуги',
       servicesTitle: 'Основные медицинские направления',
       servicesText: 'В каждом отделении диагностика и лечение проходят понятно и последовательно.',
       doctorsEyebrow: 'Специалисты',
       doctorsTitle: 'Наши врачи',
-      doctorsText: 'Врачи показаны в одном ряду carousel, фотографии не обрезаются.',
+      doctorsText:
+        'Опытные специалисты подбирают индивидуальный подход и понятный план лечения для каждого пациента.',
       resultsEyebrow: 'Преимущества',
       resultsTitle: 'После приема понятен следующий шаг',
       resultsText: 'Пациент получает результаты обследования, рекомендации врача и план лечения.',
@@ -307,23 +365,94 @@ const locales = {
       contactText: 'Оставьте данные. Администратор свяжется с вами и подберет удобное время.',
     },
     services: {
-      cardio: { title: 'Кардиология', desc: 'Диагностика сердца и сосудов, ЭКГ, ЭхоКГ и холтеровское мониторирование.' },
-      gyn: { title: 'Гинекология', desc: 'Консультация, УЗИ, лабораторные анализы и индивидуальный план лечения.' },
-      neuro: { title: 'Неврология', desc: 'Головные боли, боли в спине, заболевания нервной системы и реабилитация.' },
-      uro: { title: 'Урология', desc: 'Заболевания мочеполовой системы, УЗИ диагностика и персональный подход.' },
-      uzi: { title: 'УЗИ диагностика', desc: 'Точные исследования внутренних органов, щитовидной железы, сердца и беременности.' },
-      lab: { title: 'Лаборатория', desc: 'Анализы крови, мочи и другие исследования на современном оборудовании.' },
+      cardio: {
+        title: 'Кардиология',
+        desc: 'Диагностика сердца и сосудов, ЭКГ, ЭхоКГ и холтеровское мониторирование.',
+      },
+      gyn: {
+        title: 'Гинекология',
+        desc: 'Консультация, УЗИ, лабораторные анализы и индивидуальный план лечения.',
+      },
+      neuro: {
+        title: 'Неврология',
+        desc: 'Головные боли, боли в спине, заболевания нервной системы и реабилитация.',
+      },
+      uro: {
+        title: 'Урология',
+        desc: 'Заболевания мочеполовой системы, УЗИ диагностика и персональный подход.',
+      },
+      uzi: {
+        title: 'УЗИ диагностика',
+        desc: 'Точные исследования внутренних органов, щитовидной железы, сердца и беременности.',
+      },
+      lab: {
+        title: 'Лаборатория',
+        desc: 'Анализы крови, мочи и другие исследования на современном оборудовании.',
+      },
       lor: { title: 'ЛОР', desc: 'Осмотр, диагностика и лечение заболеваний уха, горла и носа.' },
-      surgery: { title: 'Хирургия', desc: 'Лапароскопические, эндоскопические и другие современные операции.' },
-      procto: { title: 'Проктология', desc: 'Деликатная медицинская помощь в комфортных и конфиденциальных условиях.' },
+      surgery: {
+        title: 'Хирургия',
+        desc: 'Лапароскопические, эндоскопические и другие современные операции.',
+      },
+      procto: {
+        title: 'Проктология',
+        desc: 'Деликатная медицинская помощь в комфортных и конфиденциальных условиях.',
+      },
     },
     doctors: {
-      shahnozaxon: { name: 'Рахимова Шахнозахон М.', role: 'Невролог, PhD, доцент', info: '8 лет опыта' },
-      baxtiyor: { name: 'Миракбарова Камола А.', role: 'Кардиолог, функциональная диагностика', info: '5 лет опыта' },
-      mahina: { name: 'Хидирова Махина С.', role: 'Гинеколог', info: '8 лет опыта' },
-      nuridin: { name: 'Сарсенбаев Нуридин Б.', role: 'Врач-лаборант', info: '11 лет опыта' },
-      karimov: { name: 'Каримов Муроджон Ф.', role: 'Уролог, врач УЗИ', info: '10 лет опыта' },
-      shahlo: { name: 'Шахло Абдувалиева', role: 'Терапевт', info: 'Ежедневный прием' },
+      shahlo: {
+        name: 'Талипова Шахло Рахимджановна',
+        role: 'Врач УЗИ',
+        info: '8 лет опыта',
+        details: ['Ташкентская медицинская академия'],
+      },
+      shahnozaxon: {
+        name: 'Рахимова Шахнозахон Мухиддин кизи',
+        role: 'PhD, доцент. Невролог. Превентивно-интегративный врач. Иглорефлексотерапевт.',
+        info: '8 лет опыта',
+        details: [
+          'Дата рождения: 01.01.1993',
+          'Место рождения: Ташкент',
+          'Образование: бакалавриат Ташкентской медицинской академии, 3 года магистратуры, 3 года докторантуры',
+          'Прием: понедельник - пятница, 09:00 - 14:00',
+        ],
+      },
+      mahina: {
+        name: 'Хидирова Махина Сохибовна',
+        role: 'Гинеколог',
+        info: '8 лет опыта',
+        details: ['Ташкентский педиатрический медицинский институт'],
+      },
+      kamola: {
+        name: 'Миракбарова Камола Абдусатторовна',
+        role: 'Кардиолог, врач функциональной диагностики',
+        info: '5 лет опыта',
+        details: [
+          'Направление: ЭхоКГ, Холтер мониторинг, СМАД, тредмил',
+          'Дата рождения: 10.07.1991',
+          'Место рождения: город Ташкент',
+          'Образование: ТМА бакалавриат, РЦНПМЦК клиническая ординатура, ВМОИ переквалификация',
+          'Прием: понедельник - пятница, 10:00 - 16:00',
+        ],
+      },
+      nuridin: {
+        name: 'Сарсенбаев Нуридин Бердимурадович',
+        role: 'Врач-лаборант',
+        info: '11 лет опыта',
+        details: ['Прием: понедельник - суббота, 10:00 - 17:00'],
+      },
+      karimov: {
+        name: 'Каримов Муроджон Фозилжонович',
+        role: 'Уролог, врач УЗИ',
+        info: '10 лет опыта',
+        details: [
+          'Дата рождения: 03.09.1990',
+          'Место рождения: Хорезмская область',
+          'Образование: бакалавриат 7 лет в Ургенчском филиале ТТА, клиническая ординатура 2 года в Ташкентском институте усовершенствования врачей',
+          'Прием: понедельник, среда, пятница - 09:00 - 14:00',
+          'Прием: вторник, четверг, суббота - 09:00 - 17:00',
+        ],
+      },
     },
     benefits: [
       'Первичный осмотр и анализ жалоб',
@@ -333,18 +462,21 @@ const locales = {
     ],
     branches: {
       kids: {
-        name: 'VERUM Kids',
-        address: "улица Бешкайрагач, дом 54",
-        description: 'Филиал с комфортными условиями для детей и подростков.',
+        name: 'Verum Clinic (филиал Учтепа)',
+        address: 'улица Бешкайрагач, дом 54',
+        description:
+          'Современный медицинский филиал, специализирующийся на качественной помощи детям и подросткам. Опытные специалисты работают с индивидуальным подходом к каждому ребенку.',
       },
       clinic: {
-        name: 'VERUM Clinic',
+        name: 'Verum Clinic (Шайхантахурский район)',
         address: 'улица Генерала Узакова, 43',
-        description: 'Филиал для диагностики, лечения и консультаций взрослых пациентов.',
+        description:
+          'Клиника работает с августа 2020 года и оказывает услуги по урологии и гинекологии с современным подходом, точной диагностикой и эффективным лечением.',
       },
     },
     footer: {
-      description: 'VERUM Clinic - современный медицинский центр для диагностики, лечения и профилактики.',
+      description:
+        'VERUM Clinic - современный медицинский центр для диагностики, лечения и профилактики.',
       columns: [
         {
           title: 'Клиника',
@@ -422,41 +554,119 @@ const locales = {
     sections: {
       aboutEyebrow: 'About clinic',
       aboutTitle: 'Comfortable for patients, precise for doctors',
-      aboutText: 'Consultation, lab tests, diagnostics and treatment are organized into a clear patient journey.',
+      aboutText:
+        'Consultation, lab tests, diagnostics and treatment are organized into a clear patient journey.',
       servicesEyebrow: 'Services',
       servicesTitle: 'Key medical departments',
       servicesText: 'Each department keeps diagnosis and treatment steps clear and easy to follow.',
       doctorsEyebrow: 'Specialists',
       doctorsTitle: 'Our doctors',
-      doctorsText: 'Doctors are shown in a single carousel row, and photos are not cropped.',
+      doctorsText:
+        'Experienced specialists provide individual care and a clear treatment plan for every patient.',
       resultsEyebrow: 'Benefits',
       resultsTitle: 'You leave the appointment with a clear next step',
-      resultsText: 'Patients receive test results, doctor recommendations and a practical treatment plan.',
+      resultsText:
+        'Patients receive test results, doctor recommendations and a practical treatment plan.',
       locationsEyebrow: 'Branches',
       locationsTitle: 'Two branches with clear location',
       locationsText: 'Choose a branch. The Yandex map below will show the selected address.',
       contactEyebrow: 'Contacts',
       contactTitle: 'Book an appointment',
-      contactText: 'Leave your details. An administrator will contact you and arrange a convenient time.',
+      contactText:
+        'Leave your details. An administrator will contact you and arrange a convenient time.',
     },
     services: {
-      cardio: { title: 'Cardiology', desc: 'Heart and vascular diagnostics, ECG, echocardiography and Holter monitoring.' },
-      gyn: { title: 'Gynecology', desc: 'Consultation, ultrasound, lab tests and an individual treatment plan for women.' },
-      neuro: { title: 'Neurology', desc: 'Headaches, back pain, nervous system disorders and rehabilitation programs.' },
-      uro: { title: 'Urology', desc: 'Urogenital diseases, ultrasound diagnostics and an individual treatment approach.' },
-      uzi: { title: 'Ultrasound', desc: 'Accurate scans of internal organs, thyroid gland, heart and pregnancy.' },
-      lab: { title: 'Laboratory', desc: 'Blood, urine and other tests performed with modern laboratory equipment.' },
-      lor: { title: 'ENT', desc: 'Consultation, diagnosis and treatment of ear, nose and throat conditions.' },
-      surgery: { title: 'Surgery', desc: 'Laparoscopic, endoscopic and other modern surgical procedures.' },
-      procto: { title: 'Proctology', desc: 'Confidential and comfortable medical care for delicate conditions.' },
+      cardio: {
+        title: 'Cardiology',
+        desc: 'Heart and vascular diagnostics, ECG, echocardiography and Holter monitoring.',
+      },
+      gyn: {
+        title: 'Gynecology',
+        desc: 'Consultation, ultrasound, lab tests and an individual treatment plan for women.',
+      },
+      neuro: {
+        title: 'Neurology',
+        desc: 'Headaches, back pain, nervous system disorders and rehabilitation programs.',
+      },
+      uro: {
+        title: 'Urology',
+        desc: 'Urogenital diseases, ultrasound diagnostics and an individual treatment approach.',
+      },
+      uzi: {
+        title: 'Ultrasound',
+        desc: 'Accurate scans of internal organs, thyroid gland, heart and pregnancy.',
+      },
+      lab: {
+        title: 'Laboratory',
+        desc: 'Blood, urine and other tests performed with modern laboratory equipment.',
+      },
+      lor: {
+        title: 'ENT',
+        desc: 'Consultation, diagnosis and treatment of ear, nose and throat conditions.',
+      },
+      surgery: {
+        title: 'Surgery',
+        desc: 'Laparoscopic, endoscopic and other modern surgical procedures.',
+      },
+      procto: {
+        title: 'Proctology',
+        desc: 'Confidential and comfortable medical care for delicate conditions.',
+      },
     },
     doctors: {
-      shahnozaxon: { name: 'Shahnozaxon Rahimova', role: 'Neurologist, PhD, associate professor', info: '8 years of experience' },
-      baxtiyor: { name: 'Kamola Mirakbarova', role: 'Cardiologist, functional diagnostics', info: '5 years of experience' },
-      mahina: { name: 'Mahina Xidirova', role: 'Gynecologist', info: '8 years of experience' },
-      nuridin: { name: 'Nuridin Sarsenbaev', role: 'Laboratory doctor', info: '11 years of experience' },
-      karimov: { name: 'Murodjon Karimov', role: 'Urologist, ultrasound doctor', info: '10 years of experience' },
-      shahlo: { name: 'Shahlo Abduvaliyeva', role: 'Therapist', info: 'Daily appointments' },
+      shahlo: {
+        name: 'Shahlo Talipova',
+        role: 'Ultrasound doctor',
+        info: '8 years of experience',
+        details: ['Tashkent Medical Academy'],
+      },
+      shahnozaxon: {
+        name: 'Shahnozaxon Rahimova',
+        role: 'Neurologist, PhD, associate professor, preventive-integrative doctor, reflexologist',
+        info: '8 years of experience',
+        details: [
+          'Date of birth: 01.01.1993',
+          'Place of birth: Tashkent',
+          'Education: Tashkent Medical Academy bachelor degree, 3 years of master studies, 3 years of doctoral studies',
+          'Schedule: Monday - Friday, 09:00 - 14:00',
+        ],
+      },
+      mahina: {
+        name: 'Mahina Xidirova',
+        role: 'Gynecologist',
+        info: '8 years of experience',
+        details: ['Tashkent Pediatric Medical Institute'],
+      },
+      kamola: {
+        name: 'Kamola Mirakbarova',
+        role: 'Cardiologist, functional diagnostics doctor',
+        info: '5 years of experience',
+        details: [
+          'Focus: echocardiography, Holter monitoring, ABPM, treadmill test',
+          'Date of birth: 10.07.1991',
+          'Place of birth: Tashkent city',
+          'Education: TMA bachelor degree, RCNPMCK clinical residency, VMOI retraining',
+          'Schedule: Monday - Friday, 10:00 - 16:00',
+        ],
+      },
+      nuridin: {
+        name: 'Nuridin Sarsenbaev',
+        role: 'Laboratory doctor',
+        info: '11 years of experience',
+        details: ['Schedule: Monday - Saturday, 10:00 - 17:00'],
+      },
+      karimov: {
+        name: 'Murodjon Karimov',
+        role: 'Urologist, ultrasound doctor',
+        info: '10 years of experience',
+        details: [
+          'Date of birth: 03.09.1990',
+          'Place of birth: Khorezm region',
+          'Education: 7-year bachelor degree at TTA Urgench branch, 2-year clinical residency at Tashkent Institute for Advanced Medical Training',
+          'Schedule: Monday, Wednesday, Friday - 09:00 - 14:00',
+          'Schedule: Tuesday, Thursday, Saturday - 09:00 - 17:00',
+        ],
+      },
     },
     benefits: [
       'Initial consultation and symptom review',
@@ -466,18 +676,21 @@ const locales = {
     ],
     branches: {
       kids: {
-        name: 'VERUM Kids',
+        name: 'Verum Clinic (Uchtepa branch)',
         address: "Beshqayrag'och street, 54",
-        description: 'A comfortable branch for children and teenagers.',
+        description:
+          'A modern medical branch specializing in high-quality care for children and teenagers, with experienced specialists and an individual approach to every child.',
       },
       clinic: {
-        name: 'VERUM Clinic',
+        name: 'Verum Clinic (Shaykhontohur district)',
         address: 'General Uzoqov street, 43',
-        description: 'A branch for adult diagnostics, treatment and consultations.',
+        description:
+          'Opened in August 2020, the clinic provides urology and gynecology care with modern methods, accurate diagnostics and effective treatment.',
       },
     },
     footer: {
-      description: 'VERUM Clinic is a modern medical center combining diagnostics, treatment and prevention.',
+      description:
+        'VERUM Clinic is a modern medical center combining diagnostics, treatment and prevention.',
       columns: [
         {
           title: 'Clinic',
