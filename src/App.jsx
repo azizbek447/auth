@@ -1,12 +1,7 @@
-import Dashboard from './pages/dashboard/Dashboard.jsx';
+import ChatApp from './pages/chat/ChatApp.jsx';
 
 const App = () => {
-  return (
-    <div>
-      <Dashboard />
-      {/* yoki <Signup /> */}
-    </div>
-  );
+  return <ChatApp />;
 };
 
 export default App;
